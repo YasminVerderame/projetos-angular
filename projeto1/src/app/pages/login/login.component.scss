@@ -1,0 +1,73 @@
+
+
+.form-login{
+    font-family: 'Maison Neue' !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.linha-vertical {
+    height: 460px;
+    margin-left: 137px;
+    border-left: 1px solid #e6e6e6;
+}
+
+form{
+    font-family: 'Maison Neue';
+    padding: 20px;
+    width: 40%;
+    height: 80%;
+    background-color: #fff;
+    border-radius: 30px;
+    z-index: 5;
+}
+
+h2{
+    margin: 20px 0px;
+    color: #333333;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+input{
+    height: 40px;
+    width: 56%;
+    margin-bottom: 26px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(51, 51, 51, 0.2);
+    color: #333333;
+    margin-left: 105px;
+}
+
+
+button{
+    font-family: 'Maison Neue';
+    margin-top: 20px;
+    border: none;
+    width: 171px;
+    height: 42px;
+    color: #fff;
+    background-color: #FF6380;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+footer{
+    background-color: #e6e6e6;
+    height: 120px;
+    padding: 50px;
+    margin-top: 35px;
+}
+
+h3{
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(121, 118, 118);
+    text-align: center;
+}

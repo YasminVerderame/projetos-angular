@@ -1,0 +1,98 @@
+<app-header></app-header>
+<div class="main-page">
+    <section class="topo">
+        <div class="info"> 
+          <img src="../../../assets/images/Website setup-amico.svg" alt="">
+          <h1>Yasmin Verderame</h1>
+          <h2 class="typed-out">Front-end Developer</h2>
+          <a href="https://www.linkedin.com/in/yasmin-verderame/" target="_blank"><button>LinkedIn</button></a>
+        </div>
+    </section>
+
+    <section class="about-me" id="about-me">
+        <img src="../../../assets/images/About me-amico.svg" alt="">
+        <h2>Me <span>conheça</span> um pouco <span>mais</span></h2>
+        <p>Me chamo <span>Yasmin</span> e sou desenvolvedora <span>Front-end.</span> Desenvolvo <span>landing pages</span> e interfaces para pequenas e grandes empresas, com o objetivo de melhorar a <span>experiência do usuário.</span></p>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="item row-column-reverse-mobile">
+            <div class="itens">
+                <h2>Mutant Whats</h2>               
+                <img src="../../../assets/images/mutant.png" alt="">
+                <button (click)="openModalProject1()" >Ver mais</button>
+            </div>
+            <div class="itens">
+                <h2>Jornada de Aquisição</h2>
+                <img style="height: 180px;" src="../../../assets/images/dev.whats.mutantcxo.com_pre-cadastro (1).png" alt="">
+                <button (click)="openModalProject2()">Ver mais</button>
+            </div>
+            <div class="itens">
+                <h2>AgroMarket</h2>
+                <img style="height: 180px;" src="../../../assets/images/nervous-pike-9da903.netlify.app_ (2).png" alt="">
+                <button (click)="openModalProject3()">Ver mais</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="conhecimento" id="conhecimento">
+        <img src="../../../assets/images/Hand coding-rafiki.svg" alt="">
+        <h2>Linguagens e ferramentas</h2>
+        <div class="itens">
+            <div class="item">
+                <h4>HTML5</h4>
+            </div>
+            <div class="item">
+                <h4>CSS3</h4>
+            </div>
+        </div>
+        
+        <div class="itens">
+            <div class="item">
+                <h4>ANGULAR</h4>
+            </div>
+            <div class="item">
+                <h4>BOOTSTRAP</h4>
+            </div>
+        </div>
+  
+        <div class="itens">
+            <div class="item">
+                <h4>TYPESCRIPT</h4>
+            </div>
+            <div class="item">
+                <h4>NODE.JS</h4>
+            </div>
+        </div>
+
+        <div class="itens">
+            <div class="item">
+                <h4>FIGMA</h4>
+            </div>
+            <div class="item">
+                <h4>ADOBE XD</h4>
+            </div>
+        </div>
+  
+    </section>
+
+    <section class="contato" id="contato">       
+        <h2>Me siga nas redes socias e acompanhe meu trabalho!</h2>
+        <div class="info-contact">
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/yasmin-verderame/" target="_blank"><img class="linkedin" src="../../../assets/images/linkedin.png" alt="" ></a>
+            </div>
+            <div class="social-media">
+                <a href="https://api.whatsapp.com/send/?phone=5547992853008&text&app_absent=0" target="_blank"> <img class="email" src="../../../assets/images/whatsapp.png" alt=""></a>
+            </div>
+            <div class="social-media">
+                <a href="https://github.com/YasminVerderame" target="_blank"><img class="github" src="../../../assets/images/github.png" alt=""></a>
+            </div>
+        </div>
+        <h4>@2022 Yasmin Verderame</h4>
+    </section>
+</div>
+
+<app-modal-project1 *ngIf="modalProject1" (closeModalEmit)="closeModal()"></app-modal-project1>
+<app-modal-project2 *ngIf="modalProject2" (closeModalEmit)="closeModal()"></app-modal-project2>
+<app-modal-project3 *ngIf="modalProject3" (closeModalEmit)="closeModal()"></app-modal-project3>
